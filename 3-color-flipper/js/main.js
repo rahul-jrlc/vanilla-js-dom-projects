@@ -5,7 +5,13 @@ const color = document.querySelector(".color")
 
 button.addEventListener("click", function () {
     // GET RANDOM NUMBER BETWEEN O AND 3
-    const randomNUmber = 2;
-    document.body.style.backgroundColor = colors[randomNUmber];
-    color.textContent = colors[randomNUmber];
-})
+    const randomNumber = getRandomNumber();
+    console.log(randomNumber);
+    document.body.style.backgroundColor = colors[randomNumber];
+    color.textContent = colors[randomNumber];
+});
+
+function getRandomNumber() {
+    return Math.floor(Math.random() * colors.length); 
+    // RETURNS RANDOM NUMBER B/W 0 and 3
+}
