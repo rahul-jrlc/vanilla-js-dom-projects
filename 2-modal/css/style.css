@@ -1,0 +1,45 @@
+body {
+    background: url("../img/modal.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+#open-button {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 350px;
+    height: 80px;
+    font-size: 2rem;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding-bottom: 100px;
+    box-shadow: 0 0 3px black;
+    transition: .5s;
+}
+
+#open-button:hover {
+    background: white;
+    color: black;
+}
+
+#modal {
+    background: white;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 100px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
